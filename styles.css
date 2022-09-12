@@ -10,19 +10,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 body{
-    background-color: #e5e5e5;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center ;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 header{
-    background-color: #1b83e3;
+    background-color:  #004d7a;
     height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 375px;
     background-color: #f4f4f4;
-    margin: 0 auto;
-    margin-top: 100px;
+
 
 }
 
@@ -30,8 +36,7 @@ h1 {
     font-weight: 400;
     font-size: 24px;
     color: #f4f4f4;
-    text-align: center;
-    padding-top: 25px;
+
 }
 
 main{
@@ -75,7 +80,7 @@ input {
 }
 
 button{
-    background-color: #1b83e3;
+    background-color:  #004d7a;
     border-radius: 25px;
     height: 48px;
     cursor: pointer;
@@ -98,12 +103,18 @@ button:active{
 section {
     border: 1px solid #1b83e3;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
 }
 
 .currency-container {
-    text-align: center;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .currency-name {
@@ -115,9 +126,4 @@ section {
     color: #1b83e3;
     font-weight: bold;
     font-size: 20px;
-}
-
-.arrow-img {
-    margin: 15px auto;
-    display: block;
 }
